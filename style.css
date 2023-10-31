@@ -1,0 +1,167 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+
+/* GENERAL */
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: beige;
+}
+
+.section-padding {
+    padding-top: 140px;
+}
+
+.w-100 {
+    height: 100vh;
+}
+
+.btn:hover {
+    color: #FFCA2C;
+    background-color: #212529;
+}
+
+/* NAVBAR */
+
+.navbar-nav a {
+    font-size: 17px;
+    font-weight: 540;
+    text-transform: uppercase;
+}
+
+.navbar-light .navbar-brand {
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover {
+    color: #000;
+}
+
+.nav-link:hover {
+    font-weight: 700;
+}
+
+
+
+/* HOME */
+
+.carousel-item {
+    height: 100vh;
+    min-height: 300px;
+}
+
+.carousel-caption {
+    margin-bottom: 217px;
+    z-index: 2;
+}
+
+.carousel-caption h4 {
+    font-size: 45px;
+    letter-spacing: 2px;
+    margin-top: 25px;
+   text-transform: uppercase;
+}
+
+.carousel-caption p {
+    font-size: 18px;
+    line-height: 1.9;
+    margin: auto;
+    width: 60%;
+}
+
+.carousel-inner::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+
+/* SERVICES */
+
+.services .bi {
+    font-size: 50px;
+}
+
+.services .card:hover {
+    box-shadow: 1px 0px 24px -3px rgba(32, 36, 35, 1);
+}
+
+/* PORTFOLIO */
+.portfolio .card:hover {
+    box-shadow: 1px 0px 24px -3px rgba(32, 36, 35, 1);
+}
+
+
+
+/* CONTACT */
+
+.form input {
+    margin-bottom: 55px;
+}
+
+/* MEDIA QUERİES */
+@media only screen and (max-width: 991px) {
+    .about-text {
+        text-align: center;
+    }
+
+    .about-text p {
+        text-align: justify;
+    }
+
+    .section-padding {
+        padding-top: 100px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .carousel-caption {
+        margin-bottom: 200px;
+    }
+
+    .card {
+        margin-bottom: 30px
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .carousel-caption {
+        margin-bottom: 170px;
+    }
+
+    .carousel-caption h4 {
+        font-size: 17px;
+    }
+
+    .carousel-caption p {
+        width: 100%;
+        line-height: 1.6;
+        font-size: 13px;
+    }
+
+    .carousel-caption button {
+        font-size: 10px 15px;
+        padding: 10px;
+    }
+}
